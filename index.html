@@ -9,11 +9,12 @@
 </head>
 <body>
     <div class="container">
+        <input type="hidden" value="0">
         <div class="btn-container">
             <input type="text" class="input-text" placeholder="Название задачи">
             <input type="button" class="input-sbmt" value="Добавить" onclick="createToDoItem()">
         </div>
-        <input type="button" class="input-clean" value="Очистить">
+        <input type="button" class="input-clean" value="Очистить" onclick="cleanToDoList()">
     </div>
     <script src="scripts.js"></script>
 </body>
