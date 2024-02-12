@@ -1,0 +1,89 @@
+:root { 
+    --title-size: 78px;
+    --input-size: 49px;
+    --padding-strong: 20px;
+    --padding-low: 10px;
+    --btn-size: calc(var(--input-size) / 2);
+    --border-radius: 20px;
+}
+
+.margin-0, .title, .alert {
+    margin: 0;
+}
+
+.title, .input {
+    display: block;
+}
+
+.container-full-hd {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-strong);
+    box-sizing: border-box;
+    padding: var(--padding-strong);
+    margin: auto;
+    max-width: calc(1920px * .66);
+    height: 100vh;
+}
+
+.title {
+    color: #000;
+    font-size: var(--title-size);
+    line-height: var(--title-size);
+}
+
+.btn-container {
+    position: relative;
+}
+
+.input {
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    font-size: var(--input-size);
+    padding: var(--padding-low);
+    border: 1px solid #000;
+}
+
+.input-text {
+    padding-right: calc(130px + var(--padding-low));
+}
+
+.add-btn {
+    position: absolute;
+    font-size: var(--btn-size);
+    width: auto;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.list {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-low);
+    font-size: var(--input-size);
+    list-style: none;
+}
+
+.alert {
+    display: none;
+    font-size: var(--input-size);
+    color: #ff0000;
+}
+
+.alert-show {
+    display: block;
+}
+
+.border-0 {
+    border: none;
+}
